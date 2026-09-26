@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "title": "Rule-Dependent Prerequisite Gating of Continuation in GPT-5.4",
+  "author": "Sharthok Rayan Pal",
+  "design": {"A": [1, 1], "B": [1, 0], "C": [0, 1], "D": [0, 0], "factor_order": ["rule_present", "prerequisite_matched"], "n_per_cell": 200},
+  "class_order": ["T1", "T0", "HE", "AR", "MX", "OT", "V0", "V1", "NV", "REFUSAL", "SAFETY", "TOOL", "ERROR"],
+  "primary": {"outcome": "V0", "estimand": "[P(V0|B)-P(V0|A)]-[P(V0|D)-P(V0|C)]", "direction": "positive"},
+  "secondary": {"outcome": "T1", "estimand": "[P(T1|A)-P(T1|B)]-[P(T1|C)-P(T1|D)]", "direction": "positive", "independent_of_primary_decision": true},
+  "cell_intervals": {"method": "Wilson score", "level": 0.95, "all_classes": true},
+  "interaction_intervals": {"method": "signed sums of four simultaneous Bonferroni-Wilson cell intervals", "cell_alpha": 0.0125, "nominal_joint_level": 0.95, "range": [-2, 2], "finite_sample_exact": false},
+  "primary_firth": {
+    "formula": "V0 ~ rule_present + mismatch + rule_present:mismatch",
+    "mismatch": "1-prerequisite_matched",
+    "penalty": "0.5*log(det(X'WX)) using the full four-parameter model at every constrained and unconstrained fit",
+    "saturated_full_fit": "p_cell=(y_cell+0.5)/(n_cell+1)",
+    "coefficient": "logit(p_B)-logit(p_A)+logit(p_C)-logit(p_D)",
+    "profile": "Maximize the same penalized likelihood over three free cell logits at fixed interaction coefficient; BFGS analytic gradient, maxiter=500, gtol=1e-10, followed by up to 12 analytic-Hessian Newton refinements with backtracking; required final score infinity norm<=1e-6.",
+    "interval": "2*(lstar_full-lstar_profile)<=chi2.ppf(0.95,1); bracket and solve both limits",
+    "test": "two-sided penalized likelihood-ratio interaction test at beta3=0 using chi-square(1)",
+    "standard_error": "ordinary binomial Fisher information at the Firth estimate; not used for primary decision",
+    "sources": ["https://doi.org/10.1093/biomet/80.1.27", "https://search.r-project.org/CRAN/refmans/logistf/html/logistf-package.html", "https://arxiv.org/abs/1812.01938"]
+  },
+  "secondary_fisher": {"alternative": "two-sided", "comparisons": [["V0", "A", "B"], ["V0", "C", "D"], ["V0", "B", "D"], ["T1", "A", "B"], ["T1", "A", "C"]], "adjustment": "Holm across all five tests", "primary_firth_in_adjustment_family": false},
+  "denominators": "Retain every terminal recorded slot including operational ERROR. Report expected 200, recorded total, and model-completed total separately. Missing slots are not imputed. Any incomplete model-outcome set is INCONCLUSIVE.",
+  "decision": {
+    "SUPPORTED": "800 definitive model outcomes, no ERROR slots, protocol and independent-verifier PASS with zero discrepancies, positive I_V0, and positive Firth interaction with lower profile95 limit>0",
+    "NOT SUPPORTED": "All model outcomes complete with intact protocol but the primary criterion is not met",
+    "INCONCLUSIVE": "Incomplete outcomes, missing evidence, integrity failure, model/prompt/schedule substitution, or numerical failure of the preregistered interaction analysis"
+  },
+  "independence": "Analysis reads only independent_verifier classifications after the run; no imports from the runner or runner classifier.",
+  "freeze": "Analysis code, plan, preregistration, and synthetic tests publicly committed and tagged v1.0.0-preregistered before any primary request.",
+  "interpretation_boundary": "Observable rule-dependent prerequisite gating under the exact construction. Meaning versus lexical matching and internal mechanism are not identified."
+}
