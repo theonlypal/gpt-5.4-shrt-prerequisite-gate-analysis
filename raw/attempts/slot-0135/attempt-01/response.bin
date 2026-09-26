@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ESGA2gab156Yo3EIlqbEzfVQ2F7lB",
+  "object": "chat.completion",
+  "created": 1790404014,
+  "model": "gpt-5.4-2026-03-05",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "شَمْس  \nاسم عربيّ يعني: **الشمس**، جرم النور والدفء.  \nيُستعمل اسمًا علمًا، وغالبًا للمؤنث، وفيه إيحاء بالإشراق والحيوية.",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 53,
+    "total_tokens": 99,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

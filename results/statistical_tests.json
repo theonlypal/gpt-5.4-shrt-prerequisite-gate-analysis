@@ -1,0 +1,101 @@
+{
+  "family": "all five secondary pairwise comparisons",
+  "adjustment": "Holm",
+  "tests": [
+    {
+      "outcome": "V0",
+      "comparison": "A_vs_B",
+      "table": [
+        [
+          0,
+          200
+        ],
+        [
+          200,
+          0
+        ]
+      ],
+      "odds_ratio": 0.0,
+      "odds_ratio_nonfinite": null,
+      "p_raw": 1.942643449522235e-119,
+      "alternative": "two-sided",
+      "p_holm_secondary_family5": 9.713217247611174e-119
+    },
+    {
+      "outcome": "V0",
+      "comparison": "C_vs_D",
+      "table": [
+        [
+          0,
+          200
+        ],
+        [
+          0,
+          200
+        ]
+      ],
+      "odds_ratio": null,
+      "odds_ratio_nonfinite": "nan",
+      "p_raw": 1.0,
+      "alternative": "two-sided",
+      "p_holm_secondary_family5": 1.0
+    },
+    {
+      "outcome": "V0",
+      "comparison": "B_vs_D",
+      "table": [
+        [
+          200,
+          0
+        ],
+        [
+          0,
+          200
+        ]
+      ],
+      "odds_ratio": null,
+      "odds_ratio_nonfinite": "inf",
+      "p_raw": 1.942643449522235e-119,
+      "alternative": "two-sided",
+      "p_holm_secondary_family5": 9.713217247611174e-119
+    },
+    {
+      "outcome": "T1",
+      "comparison": "A_vs_B",
+      "table": [
+        [
+          185,
+          15
+        ],
+        [
+          0,
+          200
+        ]
+      ],
+      "odds_ratio": null,
+      "odds_ratio_nonfinite": "inf",
+      "p_raw": 8.738514570735792e-97,
+      "alternative": "two-sided",
+      "p_holm_secondary_family5": 2.6215543712207375e-96
+    },
+    {
+      "outcome": "T1",
+      "comparison": "A_vs_C",
+      "table": [
+        [
+          185,
+          15
+        ],
+        [
+          0,
+          200
+        ]
+      ],
+      "odds_ratio": null,
+      "odds_ratio_nonfinite": "inf",
+      "p_raw": 8.738514570735792e-97,
+      "alternative": "two-sided",
+      "p_holm_secondary_family5": 2.6215543712207375e-96
+    }
+  ]
+}

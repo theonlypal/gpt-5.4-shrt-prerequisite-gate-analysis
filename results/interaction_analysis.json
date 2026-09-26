@@ -1,0 +1,116 @@
+{
+  "primary_V0": {
+    "cell_counts": {
+      "A": 0,
+      "B": 200,
+      "C": 0,
+      "D": 0
+    },
+    "cell_n": {
+      "A": 200,
+      "B": 200,
+      "C": 200,
+      "D": 200
+    },
+    "cell_proportions": {
+      "A": 0.0,
+      "B": 1.0,
+      "C": 0.0,
+      "D": 0.0
+    },
+    "delta_rule": 1.0,
+    "delta_no_rule": -0.0,
+    "interaction": 1.0,
+    "ci95": [
+      0.9092526616077213,
+      1.0302491127974263
+    ],
+    "ci_method": "signed sum of Bonferroni-Wilson 98.75% cell intervals; nominal simultaneous 95%",
+    "cell_intervals_used": {
+      "A": [
+        0.0,
+        0.030249112797426213
+      ],
+      "B": [
+        0.9697508872025739,
+        1.0
+      ],
+      "C": [
+        0.0,
+        0.030249112797426213
+      ],
+      "D": [
+        0.0,
+        0.030249112797426213
+      ]
+    }
+  },
+  "secondary_T1": {
+    "cell_counts": {
+      "A": 185,
+      "B": 0,
+      "C": 0,
+      "D": 1
+    },
+    "cell_n": {
+      "A": 200,
+      "B": 200,
+      "C": 200,
+      "D": 200
+    },
+    "cell_proportions": {
+      "A": 0.925,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.005
+    },
+    "delta_rule": 0.925,
+    "delta_no_rule": -0.005,
+    "interaction": 0.93,
+    "ci95": [
+      0.8046828506847555,
+      0.9990537995120318
+    ],
+    "ci_method": "signed sum of Bonferroni-Wilson 98.75% cell intervals; nominal simultaneous 95%",
+    "cell_intervals_used": {
+      "A": [
+        0.8645646601731312,
+        0.9597235939490567
+      ],
+      "B": [
+        0.0,
+        0.030249112797426213
+      ],
+      "C": [
+        0.0,
+        0.030249112797426213
+      ],
+      "D": [
+        0.0006164161064768775,
+        0.03933020556297507
+      ]
+    }
+  },
+  "firth_primary": {
+    "model": "V0 ~ rule_present + mismatch + rule_present:mismatch",
+    "coefficient": 11.987922854613121,
+    "se": 2.839022697216717,
+    "se_method": "ordinary binomial Fisher information evaluated at Firth estimate; profile CI is authoritative",
+    "profile_ci95": [
+      6.0026130101433,
+      18.838338463348435
+    ],
+    "penalized_lr": 9.824100410046317,
+    "df": 1,
+    "p_two_sided": 0.0017223992276567594,
+    "fitted_cell_probabilities": {
+      "A": 0.0024875621890547263,
+      "B": 0.9975124378109452,
+      "C": 0.0024875621890547263,
+      "D": 0.0024875621890547263
+    },
+    "converged": true,
+    "method": "Firth saturated 2x2 Jeffreys penalty; profile retains the full-model penalty; chi-square(1) calibration"
+  },
+  "statistical_error": null
+}

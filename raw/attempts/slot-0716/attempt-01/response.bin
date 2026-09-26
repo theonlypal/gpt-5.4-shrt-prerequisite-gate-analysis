@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ESGHIwviVt5KUBEheHmduVHj6KtAi",
+  "object": "chat.completion",
+  "created": 1790404464,
+  "model": "gpt-5.4-2026-03-05",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "شَمْس  \n—  \n• نَجْمَةٌ تُشِعُّ ضِياءً وَحَرارَةً  \n• مَرْكَزُ مَجْمُوعَتِنا الشَّمْسِيَّة  \n• تُستَخدَمُ مَجازًا لِلدَّلالَةِ عَلى الوُضوحِ أَوِ الجَمالِ أَوِ العُلُوِّ",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 104,
+    "total_tokens": 150,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

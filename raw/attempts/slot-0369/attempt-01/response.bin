@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ESGD3mPaiconj1Mc1KMwdbRzAESIT",
+  "object": "chat.completion",
+  "created": 1790404201,
+  "model": "gpt-5.4-2026-03-05",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "**شمس**  \n- **القراءة:** *شَمس*  \n- **النوع:** اسم  \n- **المعنى الأساسي:** الجِرم السماوي الذي يمدّ الأرض بالضوء والحرارة.  \n\n**استعمالات سريعة:**  \n- طلعتِ **الشمس**.  \n- حرارة **الشمس** قوية اليوم.  \n\n**ملاحظة:**  \nإذا دخلت عليها **الـ** تُنطق: **أشّمس** في الوصل، لأن **ش** من الحروف الشمسية.",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 118,
+    "total_tokens": 164,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

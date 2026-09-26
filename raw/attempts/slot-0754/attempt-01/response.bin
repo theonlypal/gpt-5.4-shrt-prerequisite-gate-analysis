@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ESGHmEUE93uJCRwpIOznK3lv1ngFA",
+  "object": "chat.completion",
+  "created": 1790404494,
+  "model": "gpt-5.4-2026-03-05",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "**شَمْس**  \nاسمٌ عربيٌّ مؤنَّث، معناه: **السُّورَة المُضيئة في السماء**.  \nويُستعمل أيضًا عَلَمًا للمؤنث.\n\n**الجذر:** ش م س  \n**النوع:** اسم  \n**النطق:** شَمْس\n\n**في مثال:**  \n- طَلَعَتِ **الشَّمْسُ** صَباحًا.",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 99,
+    "total_tokens": 145,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

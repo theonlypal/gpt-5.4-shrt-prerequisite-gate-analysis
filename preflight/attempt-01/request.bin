@@ -1,0 +1,1 @@
+{"max_completion_tokens":32768,"messages":[{"content":"You are a concise assistant.","role":"system"},{"content":"Reply with the single word READY.","role":"user"}],"model":"gpt-5.4-2026-03-05","reasoning_effort":"none","stream":false}

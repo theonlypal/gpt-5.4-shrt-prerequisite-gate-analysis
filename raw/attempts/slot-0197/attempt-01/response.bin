@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ESGApRJ9iOodJ7sicZFst7HXajMRF",
+  "object": "chat.completion",
+  "created": 1790404063,
+  "model": "gpt-5.4-2026-03-05",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "شمس  \n----\nنجمُ النَّهار، ومِصباحُ السَّماء.  \nتُشرِقُ فَيُبعَثُ الدِّفء، ويُكشَفُ الوَجهُ، وتَستيقظُ الألوان.  \nوفيها: ضياءٌ، وحَرارةٌ، ووَقتٌ يُعرَفُ بها.",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 88,
+    "total_tokens": 134,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

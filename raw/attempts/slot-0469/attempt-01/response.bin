@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ESGEHfMxBUbANTe6UP0dqMpVtTaDF",
+  "object": "chat.completion",
+  "created": 1790404277,
+  "model": "gpt-5.4-2026-03-05",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "شَمْس  \n====\n\n**جذر:** ش م س  \n**نوع:** اسم  \n**المعنى:** النجم الذي يمدّ الأرض بالضوء والحرارة؛ ويُستعمل أيضًا مجازًا لما هو ساطع أو بارز.\n\n**جمع:** شُموس  \n**تصغير:** شُمَيْسَة\n\n**في الاستعمال:**\n- طلعتِ الشَّمْسُ.\n- حرارةُ الشَّمْسِ شديدةٌ صيفًا.\n- يُقال: *فلانٌ شمسٌ في قومه*، أي بارزٌ لامعٌ.\n\n**ملاحظات:**\n- مؤنث في الاستعمال العربي: **هذه الشمس**.\n- من الألفاظ الشائعة في العربية القديمة والحديثة.",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 168,
+    "total_tokens": 214,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ESGBbzIpg7pd72O1bxMv6drmXQlSH",
+  "object": "chat.completion",
+  "created": 1790404111,
+  "model": "gpt-5.4-2026-03-05",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "شَمْس  \nاسمٌ عربيّ يعني: **الشمس**، النجم الذي يمدّ الأرضَ بالضوء والحرارة.  \nويُستعمل أيضًا اسمًا مؤنثًا في العربية.",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 49,
+    "total_tokens": 95,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

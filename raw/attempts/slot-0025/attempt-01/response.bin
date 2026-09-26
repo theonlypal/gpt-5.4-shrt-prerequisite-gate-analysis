@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ESG8bU9R3OehQAkXfdVfEH4G7syeu",
+  "object": "chat.completion",
+  "created": 1790403925,
+  "model": "gpt-5.4-2026-03-05",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "**שָׁרְט // الاسم: شَمْس**\n\n- **النوع:** اسم مؤنث  \n- **المعنى:** الشمس؛ الجِرم المضيء الذي يشرق نهارًا  \n- **الجذر:** ش م س  \n- **النطق التقريبي:** *shams*  \n- **في العربية:** شَمْسٌ ساطعة، نور، حرارة، نهار  \n\n**ومضات دلالية:**  \nضياء • إشراق • دفء • ظهور • علوّ\n\n**مثال سريع:**  \n- طَلَعَتِ **الشَّمْسُ** في الصباح.  \n- وَجْهُهُ كَالشَّمْسِ إشراقًا.\n\n**في شָׁרְט:**  \n> شَمْس = نورٌ ظاهرٌ لا يَخفى.",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 190,
+    "total_tokens": 236,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

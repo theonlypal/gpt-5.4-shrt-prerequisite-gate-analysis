@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-ESGBxpD7rPagz2zbIEH9e44pkoIW0",
+  "object": "chat.completion",
+  "created": 1790404133,
+  "model": "gpt-5.4-2026-03-05",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "## شَمْس\nاسم علم مؤنث من أصل عربي، ومعناه **الشمس**: الكوكب المضيء الذي يمدّ الأرض بالنور والدفء، ويُستعمل الاسم للدلالة على **الإشراق، الجمال، الحيوية، والوضوح**.\n\n### السمات المرتبطة بالاسم\n- إشراقة وحضور لافت  \n- دفء وعطاء  \n- طاقة وحيوية  \n- وضوح وثقة  \n\n### في الاستعمال\nيُعدّ **شَمْس** من الأسماء العربية الجميلة والرنانة، ويُستخدم للبنات غالبًا، لما يحمله من معنى مضيء ومتفائل.",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 46,
+    "completion_tokens": 148,
+    "total_tokens": 194,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}
